@@ -3,6 +3,11 @@ run = "./montaje.sh"
 
 [nix]
 channel = "stable-24_05"
+packages = ["docker", "run", "systemd", "redis", "htop-vim"]
 
 [deployment]
 run = ["sh", "-c", "./montaje.sh"]
+
+[[ports]]
+localPort = 6379
+externalPort = 80
