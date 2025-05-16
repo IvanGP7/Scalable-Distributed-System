@@ -1,0 +1,12 @@
+Iniciando pruebas de rendimiento para RabbitMQ...
+----------------------------------------
+InsultService (Publicación):
+  - Requests: 300
+  - Tiempo total: 198606ms
+  - Tiempo promedio: 662ms
+InsultFilter (Consumo):
+  - Requests: 300
+  - Tiempo total: 182189ms
+  - Tiempo promedio: 607ms
+----------------------------------------
+Pruebas completadas.

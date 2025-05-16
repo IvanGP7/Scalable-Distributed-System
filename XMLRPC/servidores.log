@@ -1,0 +1,1183 @@
+Servidor listo en puerto 8000
+Traceback (most recent call last):
+  File "C:\Users\playe\Documents\UNI\SD\24_25\Laboratorio\Practica1\SpeedUp_SistemasDistribuidos\XMLRPC\Servidores\server.py", lineServidor listo en     print(f"Servidor listo en puerto {PORT}")
+    ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\socketserver.py", line 233, in serve_forever
+    ready = selector.select(poll_interval)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\selectors.py", line 323, in select
+    r, w, _ = self._select(self._readers, self._writers, [], timeout)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\selectors.py", line 314, in _select
+    r, w, x = select.select(r, w, w, timeout)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+.Python.3.11_3    r, w, _ = self._select(self._readers, self._writers, [], timeout)
+    r, w, x = select.select(r, w, w, timeout)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+r, w, w, timeout)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+e 314, in _select
+    r, w, x = select.select(r, w, w, timeout)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+y", line 323, in select
+    r, w, _ = self._select(self._rea    r, w, _ = self._select(self._readers, self._writers, [], timeout)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\selectors.py", line 314, in _select
+    r, w, x = select.select(r, w, w, timeout)
+              ^^^^^^^^^Servidor listo en puerto 8000
+Traceback (most recent call last):
+  File "C:\Users\playe\Documents\UNI\SD\24_25\Laboratorio\Practica1\SpeedUp_SistemasDistribuidos\XMLRPC\Servidores\server.py", line 71, in <module>
+    server.serve_forever()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\socketserver.py", line 233, in serve_forever
+    ready = selector.select(poll_interval)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\selectors.py", line 323, in select
+    r, w, _ = self._select(self._readers, self._writers, [], timeout)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\selectors.py", line 314, in _select
+    r, w, x = select.select(r, w, w, timeout)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+/RPC2 HTTP/1.1" 200 -
+127.0.0.1 - - [15/May/2025 12:14:28] "POST /RPC2 HTTP/1.1" 200 -
+127.0.0.1 - - [15/May/2025 12:14:28] "POST /RPC2 HTTP/1.1" 200 -
+127.0.0.1 - - [15/May/2025 12:14:28] "POST /RPC2 HTTP/1.1" 200 -
+127.0.0.1 - - [15/May/2025 12:14:28] "POST /RPC2 HTTP/1.1" 200 -
+127.0.0.1 - - [15/May/2025 12:14:28] "POST /RPC2 HTTP/1.1" 200 -
+127.0.0.1 - - [15/May/2025 12:14:28] "POST /RPC2 HTTP/1.1" 200 -
+127.0.0.1 - - [15/May/2025 12:14:28] "POST /RPC2 HTTP/1.1" 200 -
+127.0.0.1 - - [15/May/2025 12:14:28] "POST /RPC2 HTTP/1.1" 200 -
+127.0.0.1 - - [15/May/2025 12:14:28] "POST /RPC2 HTTP/1.1" 200 -
+127.0.0.1 - - [15/May/2025 12:14:28] "POST /RPC2 HTTP/1.1" 200 -
+127.0.0.1 - - [15/May/2025 12:14:28] "POST /RPC2 HTTP/1.1" 200 -
+127.0.0.1 - - [15/May/2025 12:14:28] "POST /RPC2 HTTP/1.1" 200 -
+127.0.0.1 - - [15/May/2025 12:14:28] "POST /RPC2 HTTP/1.1" 200 -
+127.0.0.1 - - [15/May/2025 12:14:28] "POST /RPC2 HTTP/1.1" 200 -
+127.0.0.1 - - [15/May/2025 12:14:28] "POST /RPC2 HTTP/1.1" 200 -
+127.0.0.1 - - [15/May/2025 12:14:29] "POST /RPC2 HTTP/1.1" 200 -
+127.0.0.1 - - [15/May/2025 12:14:30] "POST /RPC2 HTTP/1.1" 200 -
+127.0.0.1 - - [15/May/2025 12:14:32] "POST /RPC2 HTTP/1.1" 200 -
+127.0.0.1 - - [15/May/2025 12:14:33] "POST /RPC2 HTTP/1.1" 200 -
+127.0.0.1 - - [15/May/2025 12:14:33] "POST /RPC2 HTTP/1.1" 200 -
+Servidor listo en puerto 8004
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Traceback (most recent call last):
+  File "C:\Users\playe\Documents\UNI\SD\24_25\Laboratorio\Practica1\SpeedUp_SistemasDistribuidos\XMLRPC\Servidores\server.py", line 71, in <module>
+    server.serve_forever()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\socketserver.py", line 233, in serve_forever
+    ready = selector.select(poll_interval)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\selectors.py", line 323, in select
+    r, w, _ = self._select(self._readers, self._writers, [], timeout)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\selectors.py", line 314, in _select
+    r, w, x = select.select(r, w, w, timeout)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+5 12:14:40] "POST /RPC2 HTTP/1.1" 200 -
+127.0.0.1 - - [15/May/2025 12:14:40] "POST /RPC2 HTTP/1.1" 200 -
+127.0.0.1 - - [15/May/2025 12:14:40] "POST /RPC2 HTTP/1.1" 200 -
+127.0.0.1 - - [15/May/2025 12:14:40] "POST /RPC2 HTTP/1.1" 200 -
+127.0.0.1 - - [15/May/2025 12:14:40] "POST /RPC2 HTTP/1.1" 200 -
+127.0.0.1 - - [15/May/2025 12:14:40] "POST /RPC2 HTTP/1.1" 200 -
+127.0.0.1 - - [15/May/2025 12:14:40] "POST /RPC2 HTTP/1.1" 200 -
+127.0.0.1 - - [15/May/2025 12:14:40] "POST /RPC2 HTTP/1.1" 200 -
+127.0.0.1 - - [15/May/2025 12:14:40] "POST /RPC2 HTTP/1.1" 200 -
+127.0.0.1 - - [15/May/2025 12:14:40] "POST /RPC2 HTTP/1.1" 200 -
+127.0.0.1 - - [15/May/2025 12:14:40] "POST /RPC2 HTTP/1.1" 200 -
+127.0.0.1 - - [15/May/2025 12:14:40] "POST /RPC2 HTTP/1.1" 200 -
+127.0.0.1 - - [15/May/2025 12:14:40] "POST /RPC2 HTTP/1.1" 200 -
+127.0.0.1 - - [15/May/2025 12:14:40] "POST /RPC2 HTTP/1.1" 200 -
+Servidor listo en puerto 8003
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Error sincronizando insultos: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+Traceback (most recent call last):
+  File "C:\Users\playe\Documents\UNI\SD\24_25\Laboratorio\Practica1\SpeedUp_SistemasDistribuidos\XMLRPC\Servidores\server.py", line 71, in <module>
+    server.serve_forever()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\socketserver.py", line 233, in serve_forever
+    ready = selector.select(poll_interval)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\selectors.py", line 323, in select
+    r, w, _ = self._select(self._readers, self._writers, [], timeout)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\selectors.py", line 314, in _select
+    r, w, x = select.select(r, w, w, timeout)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+0.0.1 - - [15/May/2025 12:14:52] "POST /RPC2 HTTP/1.1" 200 -
+127.0.0.1 - - [15/May/2025 12:14:52] "POST /RPC2 HTTP/1.1" 200 -
+127.0.0.1 - - [15/May/2025 12:14:52] "POST /RPC2 HTTP/1.1" 200 -
+127.0.0.1 - - [15/May/2025 12:14:52] "POST /RPC2 HTTP/1.1" 200 -
+127.0.0.1 - - [15/May/2025 12:14:52] "POST /RPC2 HTTP/1.1" 200 -
+127.0.0.1 - - [15/May/2025 12:14:52] "POST /RPC2 HTTP/1.1" 200 -
+127.0.0.1 - - [15/May/2025 12:14:52] "POST /RPC2 HTTP/1.1" 200 -
+127.0.0.1 - - [15/May/2025 12:14:52] "POST /RPC2 HTTP/1.1" 200 -
+127.0.0.1 - - [15/May/2025 12:14:52] "POST /RPC2 HTTP/1.1" 200 -
+127.0.0.1 - - [15/May/2025 12:14:52] "POST /RPC2 HTTP/1.1" 200 -
+127.0.0.1 - - [15/May/2025 12:14:52] "POST /RPC2 HTTP/1.1" 200 -
+127.0.0.1 - - [15/May/2025 12:14:52] "POST /RPC2 HTTP/1.1" 200 -
+127.0.0.1 - - [15/May/2025 12:14:52] "POST /RPC2 HTTP/1.1" 200 -
+127.0.0.1 - - [15/May/2025 12:14:52] "POST /RPC2 HTTP/1.1" 200 -
+127.0.0.1 - - [15/May/2025 12:14:52] "POST /RPC2 HTTP/1.1" 200 -
+127.0.0.1 - - [15/May/2025 12:14:52] "POST /RPC2 HTTP/1.1" 200 -
+127.0.0.1 - - [15/May/2025 12:14:52] "POST /RPC2 HTTP/1.1" 200 -
+127.0.0.1 - - [15/May/2025 12:14:52] "POST /RPC2 HTTP/1.1" 200 -
+Servidor listo en puerto 8002
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Error sincronizando insultos: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+Traceback (most recent call last):
+  File "C:\Users\playe\Documents\UNI\SD\24_25\Laboratorio\Practica1\SpeedUp_SistemasDistribuidos\XMLRPC\Servidores\server.py", line 70, in <module>
+    print(f"Servidor listo en puerto {PORT}")
+    ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\socketserver.py", line 233, in serve_forever
+    ready = selector.select(poll_interval)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\selectors.py", line 323, in select
+    r, w, _ = self._select(self._readers, self._writers, [], timeout)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\selectors.py", line 314, in _select
+    r, w, x = select.select(r, w, w, timeout)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+1.1" 200 -
+127.0.0.1 - - [15/May/2025 12:15:16] "POST /RPC2 HTTP/1.1" 200 -
+127.0.0.1 - - [15/May/2025 12:15:16] "POST /RPC2 HTTP/1.1" 200 -
+127.0.0.1 - - [15/May/2025 12:15:16] "POST /RPC2 HTTP/1.1" 200 -
+127.0.0.1 - - [15/May/2025 12:15:16] "POST /RPC2 HTTP/1.1" 200 -
+127.0.0.1 - - [15/May/2025 12:15:16] "POST /RPC2 HTTP/1.1" 200 -
+127.0.0.1 - - [15/May/2025 12:15:16] "POST /RPC2 HTTP/1.1" 200 -
+127.0.0.1 - - [15/May/2025 12:15:16] "POST /RPC2 HTTP/1.1" 200 -
+127.0.0.1 - - [15/May/2025 12:15:16] "POST /RPC2 HTTP/1.1" 200 -
+127.0.0.1 - - [15/May/2025 12:15:16] "POST /RPC2 HTTP/1.1" 200 -
+127.0.0.1 - - [15/May/2025 12:15:16] "POST /RPC2 HTTP/1.1" 200 -
+127.0.0.1 - - [15/May/2025 12:15:16] "POST /RPC2 HTTP/1.1" 200 -
+127.0.0.1 - - [15/May/2025 12:15:16] "POST /RPC2 HTTP/1.1" 200 -
+127.0.0.1 - - [15/May/2025 12:15:16] "POST /RPC2 HTTP/1.1" 200 -
+127.0.0.1 - - [15/May/2025 12:15:16] "POST /RPC2 HTTP/1.1" 200 -
+127.0.0.1 - - [15/May/2025 12:15:16] "POST /RPC2 HTTP/1.1" 200 -
+127.0.0.1 - - [15/May/2025 12:15:20] "POST /RPC2 HTTP/1.1" 200 -
+127.0.0.1 - - [15/May/2025 12:15:22] "POST /RPC2 HTTP/1.1" 200 -
+127.0.0.1 - - [15/May/2025 12:15:26] "POST /RPC2 HTTP/1.1" 200 -
+127.0.0.1 - - [15/May/2025 12:15:28] "POST /RPC2 HTTP/1.1" 200 -
+127.0.0.1 - - [15/May/2025 12:15:32] "POST /RPC2 HTTP/1.1" 200 -
+127.0.0.1 - - [15/May/2025 12:15:34] "POST /RPC2 HTTP/1.1" 200 -
+127.0.0.1 - - [15/May/2025 12:15:38] "POST /RPC2 HTTP/1.1" 200 -
+127.0.0.1 - - [15/May/2025 12:15:40] "POST /RPC2 HTTP/1.1" 200 -
+127.0.0.1 - - [15/May/2025 12:15:44] "POST /RPC2 HTTP/1.1" 200 -
+Servidor listo en puerto 8001
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Error sincronizando insultos: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Error sincronizando insultos: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Error sincronizando insultos: Request-sent
+Error sincronizando insultos: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+Error sincronizando insultos: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+Error sincronizando insultos: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+Error sincronizando insultos: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+Error sincronizando insultos: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+Error sincronizando insultos: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+Error sincronizando insultos: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+Error sincronizando insultos: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+Error sincronizando insultos: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+Error sincronizando insultos: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+Error sincronizando insultos: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+Error sincronizando insultos: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+Error sincronizando insultos: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+Error sincronizando insultos: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+Error sincronizando insultos: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+Error sincronizando insultos: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+Error sincronizando insultos: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+Error sincronizando insultos: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+Error sincronizando insultos: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+Error sincronizando insultos: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+Error sincronizando insultos: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+Error sincronizando insultos: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+Error sincronizando insultos: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+Error sincronizando insultos: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+Error sincronizando insultos: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+Error sincronizando insultos: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+Error sincronizando insultos: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+Error sincronizando insultos: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+Error sincronizando insultos: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+Error sincronizando insultos: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+Error sincronizando insultos: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+Error sincronizando insultos: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+Error sincronizando insultos: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+Error sincronizando insultos: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+Error sincronizando insultos: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+Error sincronizando insultos: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+Error sincronizando insultos: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+Error sincronizando insultos: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+Error sincronizando insultos: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+Error sincronizando insultos: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+Error sincronizando insultos: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+Error sincronizando insultos: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+Error sincronizando insultos: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+Error sincronizando insultos: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+Error sincronizando insultos: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+Error sincronizando insultos: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+Error sincronizando insultos: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+Error sincronizando insultos: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+Error sincronizando insultos: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+Error sincronizando insultos: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+Error sincronizando insultos: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+Error sincronizando insultos: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+Error sincronizando insultos: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+Error sincronizando insultos: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+Error sincronizando insultos: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+Error sincronizando insultos: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+Error sincronizando insultos: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+Error sincronizando insultos: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+Error sincronizando insultos: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+Error sincronizando insultos: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+Error sincronizando insultos: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+Error sincronizando insultos: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+Error sincronizando insultos: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+Error sincronizando insultos: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+Error sincronizando insultos: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+Error sincronizando insultos: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+Error sincronizando insultos: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+Error sincronizando insultos: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+Error sincronizando insultos: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+Error sincronizando insultos: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+Error sincronizando insultos: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+Error sincronizando insultos: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+Error sincronizando insultos: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+Error sincronizando insultos: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+Error sincronizando insultos: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+Error sincronizando insultos: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+Error sincronizando insultos: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+Error sincronizando insultos: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+Error sincronizando insultos: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+Error sincronizando insultos: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+Error sincronizando insultos: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+Error sincronizando insultos: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+Error sincronizando insultos: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+Error sincronizando insultos: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+Error sincronizando insultos: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+Error sincronizando insultos: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+Error sincronizando insultos: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+Error sincronizando insultos: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+Error sincronizando insultos: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+Error sincronizando insultos: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+Error sincronizando insultos: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+Error sincronizando insultos: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+Error sincronizando insultos: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+Error sincronizando insultos: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+Error sincronizando insultos: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+Error sincronizando insultos: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+Error sincronizando insultos: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+Error sincronizando insultos: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+Error sincronizando insultos: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+Error sincronizando insultos: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+Error sincronizando insultos: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+Error sincronizando insultos: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+Error sincronizando insultos: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+Error sincronizando insultos: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+Error sincronizando insultos: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+Error sincronizando insultos: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+Error sincronizando insultos: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+Error sincronizando insultos: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+Error sincronizando insultos: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+Error sincronizando insultos: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+Error sincronizando insultos: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+Error sincronizando insultos: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+Error sincronizando insultos: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+Error sincronizando insultos: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+Error sincronizando insultos: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+Error sincronizando insultos: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+Error sincronizando insultos: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+Error sincronizando insultos: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+Error sincronizando insultos: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+Error sincronizando insultos: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+Error sincronizando insultos: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+Error sincronizando insultos: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+Error sincronizando insultos: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+Error sincronizando insultos: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+Error sincronizando insultos: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+Error sincronizando insultos: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+Error sincronizando insultos: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+Error sincronizando insultos: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+Error sincronizando insultos: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+Error sincronizando insultos: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+Error sincronizando insultos: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+Error sincronizando insultos: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+Error sincronizando insultos: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+Error sincronizando insultos: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+Error sincronizando insultos: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+Error sincronizando insultos: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+Error sincronizando insultos: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+Error sincronizando insultos: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+Error sincronizando insultos: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+Error sincronizando insultos: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+Traceback (most recent call last):
+  File "C:\Users\playe\Documents\UNI\SD\24_25\Laboratorio\Practica1\SpeedUp_SistemasDistribuidos\XMLRPC\Servidores\server.py", line 70, in <module>
+    print(f"Servidor listo en puerto {PORT}")
+    ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\socketserver.py", line 233, in serve_forever
+    ready = selector.select(poll_interval)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\selectors.py", line 323, in select
+    r, w, _ = self._select(self._readers, self._writers, [], timeout)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\selectors.py", line 314, in _select
+    r, w, x = select.select(r, w, w, timeout)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           127.0.0.1 - - [15/May/2025 12:14:37] "POST /RPC2 HTTP/1.1" 200 -
+127.0.0.1 - - [15/May/2025 12:14:39] "POST /RPC2 HTTP/1.1" 200 -
+127.0.0.1 - - [15/May/2025 12:14:43] "POST /RPC2 HTTP/1.1" 200 -
+127.0.0.1 - - [15/May/2025 12:14:45] "POST /RPC2 HTTP/1.1" 200 -
+127.0.0.1 - - [15/May/2025 12:14:49] "POST /RPC2 HTTP/1.1" 200 -
+127.0.0.1 - - [15/May/2025 12:14:51] "POST /RPC2 HTTP/1.1" 200 -
+127.0.0.1 - - [15/May/2025 12:14:55] "POST /RPC2 HTTP/1.1" 200 -
+127.0.0.1 - - [15/May/2025 12:14:58] "POST /RPC2 HTTP/1.1" 200 -
+127.0.0.1 - - [15/May/2025 12:15:02] "POST /RPC2 HTTP/1.1" 200 -
+127.0.0.1 - - [15/May/2025 12:15:04] "POST /RPC2 HTTP/1.1" 200 -
+127.0.0.1 - - [15/May/2025 12:15:08] "POST /RPC2 HTTP/1.1" 200 -
+127.0.0.1 - - [15/May/2025 12:15:10] "POST /RPC2 HTTP/1.1" 200 -
+127.0.0.1 - - [15/May/2025 12:15:14] "POST /RPC2 HTTP/1.1" 200 -
+127.0.0.1 - - [15/May/2025 12:15:16] "POST /RPC2 HTTP/1.1" 200 -
+127.0.0.1 - - [15/May/2025 12:15:20] "POST /RPC2 HTTP/1.1" 200 -
+127.0.0.1 - - [15/May/2025 12:15:22] "POST /RPC2 HTTP/1.1" 200 -
+127.0.0.1 - - [15/May/2025 12:15:26] "POST /RPC2 HTTP/1.1" 200 -
+127.0.0.1 - - [15/May/2025 12:15:28] "POST /RPC2 HTTP/1.1" 200 -
+127.0.0.1 - - [15/May/2025 12:15:32] "POST /RPC2 HTTP/1.1" 200 -
+127.0.0.1 - - [15/May/2025 12:15:34] "POST /RPC2 HTTP/1.1" 200 -
+127.0.0.1 - - [15/May/2025 12:15:38] "POST /RPC2 HTTP/1.1" 200 -
+127.0.0.1 - - [15/May/2025 12:15:42] "POST /RPC2 HTTP/1.1" 200 -
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Error añadiendo insulto: Request-sent
+Error sincronizando insultos: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Error sincronizando insultos: Request-sent
+Error añadiendo insulto: Idle
+Traceback (most recent call last):
+  File "C:\Users\playe\Documents\UNI\SD\24_25\Laboratorio\Practica1\SpeedUp_SistemasDistribuidos\XMLRPC\Servidores\server.py", line 70, in <module>
+    print(f"Servidor listo en puerto {PORT}")
+    ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\socketserver.py", line 233, in serve_forever
+    ready = selector.select(poll_interval)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\selectors.py", line 323, in select
+    r, w, _ = self._select(self._readers, self._writers, [], timeout)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\selectors.py", line 314, in _select
+    r, w, x = select.select(r, w, w, timeout)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt

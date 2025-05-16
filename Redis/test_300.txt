@@ -1,0 +1,12 @@
+Iniciando pruebas de rendimiento para Redis...
+----------------------------------------
+InsultService (RPUSH):
+  - Requests: 300
+  - Tiempo total: 158053ms
+  - Tiempo promedio: 526ms
+InsultFilter (censura):
+  - Requests: 300
+  - Tiempo total: 41326ms
+  - Tiempo promedio: 137ms
+----------------------------------------
+Pruebas completadas.
