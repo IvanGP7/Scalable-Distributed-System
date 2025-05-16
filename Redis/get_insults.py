@@ -1,33 +1,26 @@
 import redis
-import time
 
-def get_and_save_insults():
-    # Conexión a Redis
-    r = redis.Redis(host='localhost', port=6379, db=0)
-
+def export_and_clear():
     try:
-        # Obtener todos los insultos
-        insults = r.lrange("global_insults", 0, -1)
+        # Conexión a Redis
+        r = redis.Redis(host='localhost', port=6379, db=0)
+        
+        # 1. Exportar a archivo
+        insults = r.lrange("lista_insultos", 0, -1)
+        with open("insultos.txt", "w", encoding="utf-8") as f:
+            for insult in insults:
+                f.write(f"{insult.decode('utf-8')}\n")
+        
+        print(f"Exportados {len(insults)} insultos a insultos.txt")
 
-        # Guardar en archivo
-        timestamp = time.strftime("%Y%m%d_%H%M%S")
-        filename = f"insults_backup_{timestamp}.txt"
-
-        with open(filename, "w") as f:
-            f.write("=== LISTA COMPLETA DE INSULTOS ===\n")
-            for i, insult in enumerate(insults, 1):
-                f.write(f"{i}. {insult.decode('utf-8')}\n")
-
-        print(f"✓ {len(insults)} insultos guardados en {filename}")
-        print("Contenido:")
-        print(open(filename).read())
+        # 2. Limpiar lista
+        r.delete("lista_insultos")
+        print("Lista de insultos limpiada")
 
     except Exception as e:
-        print(f"✗ Error: {str(e)}")
-    finally:
-        # Cerrar conexión (opcional en Redis)
-        r.close()
+        print(f"Error: {str(e)}")
 
 if __name__ == "__main__":
-    print("\nObteniendo lista de insultos...")
-    get_and_save_insults()
+    print("Ejecutando exportación y limpieza...")
+    export_and_clear()
+    print("Operación completada")

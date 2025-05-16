@@ -1,35 +1,30 @@
 #!/bin/bash
 
-if [ "$#" -ne 2 ]; then
-    echo "Uso: $0 <num_workers> <num_requests>"
-    exit 1
-fi
+# Configuración
+REDIS_CONTAINER="my-redis"
+NUM_REQUESTS=$1
+NUM_THREADS=$2
 
-NUM_WORKERS=$1
-NUM_REQUESTS=$2
-if ! pgrep -f "redis-server" > /dev/null; then
-    echo "Iniciando Redis..."
-    redis-server &
-    sleep 5
-else
-    echo "Redis ya está en ejecución."
-fi
+# Iniciar Redis en Docker
+docker start $REDIS_CONTAINER
+sleep 1  # Esperar inicialización
 
-
-# Iniciar workers
-#for i in $(seq 1 $NUM_WORKERS); do
-#    echo "Iniciando Worker: $i"
-#    python workers/worker.py & > /dev/null 2>&1
-#    # Esperar inicialización
-#    sleep 1
-#done
-
+# Iniciar servidor en segundo plano
+# python servidor.py &
+sleep 5
 
 # Ejecutar clientes
-python insult_client.py $NUM_REQUESTS $NUM_WORKERS > /dev/null 2>&1
-echo "Insult Cliente finalizado: $NUM_REQUESTS IT, $NUM_WORKERS ND"
-python filter_client.py $NUM_REQUESTS $NUM_WORKERS > /dev/null 2>&1
-echo "Insult Filter finalizado: $NUM_REQUESTS IT, $NUM_WORKERS ND"
+echo -e "\n=== Ejecutando pruebas ==="
+python insult_client.py $NUM_REQUESTS $NUM_THREADS
+python filter_client.py $NUM_REQUESTS $NUM_THREADS
+
+# Mostrar resultados
+echo -e "\n=== Resultados ==="
+cat tiempos_clientes.log
+
+python get_insults.py
 
 # Limpieza
-#kill -9 $(ps aux | grep "workers/worker" | grep -v grep | awk '{print $2}')
+docker stop $REDIS_CONTAINER > /dev/null
+
+echo -e "\nSistema detenido correctamente"

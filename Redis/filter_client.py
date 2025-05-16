@@ -2,39 +2,56 @@ import redis
 import threading
 import time
 import sys
+from Functions_insult import InsultManager
 
-TEST_TEXT = "Eres un bobo, tontolaba y un insulto_0_1"
+TEST_TEXT = "Eres un bobo, zoquete y un TONTOLABA de mierda"
 
-def worker(requests):
-    r = redis.Redis(host='localhost', port=6379, db=0)
-    for _ in range(requests):
-        insults = [i.decode('utf-8') for i in r.lrange("global_insults", 0, -1)]
-        # Obtener la lista de insultos
-        if insults:
-            import re
-            re.sub('|'.join(map(re.escape, insults)), 'CENSORED', TEST_TEXT)
-
-if __name__ == "__main__":
-    num_requests = int(sys.argv[1]) if len(sys.argv) > 1 else 10
-    num_workers = int(sys.argv[2]) if len(sys.argv) > 2 else 3
-
+def worker(requests, r, results):
+    manager = InsultManager(r)
     start = time.time()
+    
+    for _ in range(requests):
+        manager.censor_text(TEST_TEXT)
+    
+    end = time.time()
+    results.append(end - start)
+
+def main():
+    if len(sys.argv) != 3:
+        print("Uso: python filter_client.py <num_peticiones> <num_threads>")
+        return
+
+    num_requests = int(sys.argv[1])
+    num_threads = int(sys.argv[2])
+    
+    r = redis.Redis(host='localhost', port=6379, db=0)
+    results = []
+    requests_per_thread = num_requests // num_threads
+
+    print(f"\nFilterClient: {num_requests} peticiones, {num_threads} threads")
+    print(f"Texto de prueba: '{TEST_TEXT}'")
+    
+    start_time = time.time()
     threads = []
-
-    requests_per_worker = max(1, num_requests // num_workers)
-
-    for _ in range(num_workers):
-        t = threading.Thread(target=worker, args=(requests_per_worker,))
-        t.start()
+    
+    for _ in range(num_threads):
+        t = threading.Thread(
+            target=worker,
+            args=(requests_per_thread, r, results)
+        )
         threads.append(t)
+        t.start()
 
     for t in threads:
         t.join()
 
-    total_time = time.time() - start
-
+    total_time = time.time() - start_time
+    
     with open("tiempos_clientes.log", "a") as f:
-        f.write(f"FilterClient,{num_requests},{num_workers},{total_time:.4f}\n")
+        f.write(f"FilterClient,{num_requests},{num_threads},{total_time:.4f}\n")
+    
+    print(f"Finalizado en {total_time:.2f} segundos")
+    print(f"Resultados guardados en tiempos_clientes.log")
 
-    print(f"FilterClient - {num_requests} censuras - {num_workers} workers")
-    print(f"Tiempo: {total_time:.2f}s")
+if __name__ == "__main__":
+    main()
