@@ -9,7 +9,6 @@ NUM_SERVERS=$1
 NUM_REQUESTS=$2
 
 # Limpiar archivos previos
-echo "" >> tiempos_clientes.log
 > servidores.log
 # Iniciar NameServer
 python NameServer/nameserver.py >> servidores.log 2>&1 &
