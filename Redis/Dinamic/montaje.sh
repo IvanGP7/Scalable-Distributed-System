@@ -6,31 +6,30 @@ if [ "$#" -ne 2 ]; then
     exit 1
 fi
 
-# Configuración
 REDIS_CONTAINER="my-redis"
 NUM_REQUESTS=$1
 NUM_THREADS=$2
-
-# Iniciar Redis en Docker
+echo -e "\n$0 $1 $2" >> worker.log
+# Iniciar Redis
 docker start $REDIS_CONTAINER
-sleep 1  # Esperar inicialización
+sleep 2
 
-# Iniciar servidor en segundo plano
-# python servidor.py &
+# Iniciar worker dinámico
+python worker.py &
+WORKER_PID=$!
 sleep 5
 
-# Ejecutar clientes
+# Ejecutar pruebas
 echo -e "\n=== Ejecutando pruebas ==="
-python insult_client.py $NUM_REQUESTS $NUM_THREADS
 python filter_client.py $NUM_REQUESTS $NUM_THREADS
 
-# Mostrar resultados
+# Resultados
 echo -e "\n=== Resultados ==="
 cat tiempos_clientes.log
 
-python get_insults.py
-
 # Limpieza
 docker stop $REDIS_CONTAINER > /dev/null
+kill $WORKER_PID
+wait $WORKER_PID 2>/dev/null
 
 echo -e "\nSistema detenido correctamente"
