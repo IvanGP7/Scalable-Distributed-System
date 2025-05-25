@@ -6,7 +6,7 @@ import threading
 class SyncService:
     def __init__(self):
         self.storage = Pyro4.Proxy("PYRONAME:storage.node")
-        self.interval = 5  # segundos
+        self.interval = 0.1  # segundos
 
     def start_sync(self):
         while True:

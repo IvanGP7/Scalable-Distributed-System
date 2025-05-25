@@ -35,9 +35,9 @@ sleep 3
 python Clients/insult_client.py $NUM_REQUESTS
 python Clients/filter_client.py $NUM_REQUESTS
 
-
-kill -9 $(ps aux | grep "NameServer/nameserver" | grep -v grep | awk '{print $2}')
-kill -9 $(ps aux | grep "StorageServer/storage" | grep -v grep | awk '{print $2}')
 kill -9 $(ps aux | grep "SyncService/sync" | grep -v grep | awk '{print $2}')
 kill -9 $(ps aux | grep "WorkerNodes/worker" | grep -v grep | awk '{print $2}')
+kill -9 $(ps aux | grep "NameServer/nameserver" | grep -v grep | awk '{print $2}')
+kill -9 $(ps aux | grep "StorageServer/storage" | grep -v grep | awk '{print $2}')
+
 #kill -9 $(ps aux | grep "Pyro4.naming" | grep -v grep | awk '{print $2}')
