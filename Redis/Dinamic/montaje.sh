@@ -21,7 +21,9 @@ sleep 5
 
 # Ejecutar pruebas
 echo -e "\n=== Ejecutando pruebas ==="
+python insult_client.py $NUM_REQUESTS $NUM_THREADS
 python filter_client.py $NUM_REQUESTS $NUM_THREADS
+
 
 # Resultados
 echo -e "\n=== Resultados ==="
@@ -29,7 +31,5 @@ cat tiempos_clientes.log
 
 # Limpieza
 docker stop $REDIS_CONTAINER > /dev/null
-kill $WORKER_PID
-wait $WORKER_PID 2>/dev/null
 
 echo -e "\nSistema detenido correctamente"
