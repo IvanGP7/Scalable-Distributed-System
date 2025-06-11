@@ -1,89 +1,82 @@
-import matplotlib.pyplot as plt
 import pandas as pd
-import numpy as np
-import sys
+import matplotlib.pyplot as plt
+import seaborn as sns
 
-# Configurar el backend para evitar problemas en Windows
-plt.switch_backend('agg')
+# Leer el archivo de log
+df = pd.read_csv("XMLRPC/tiempos_clientes.log", header=None, names=["Client", "Iteraciones", "Nodos", "Tiempo"])
 
-# Configuración de estilo
-try:
-    plt.style.use('seaborn-v0_8')
-except:
-    plt.style.use('ggplot')
+# Configurar estilo de gráficos
+sns.set(style="whitegrid")
 
-plt.rcParams['figure.figsize'] = [12, 6]
-plt.rcParams['font.size'] = 12
-colors = {'InsultClient': '#4C72B0', 'FilterClient': '#DD8452'}
-
-def load_data(file_path):
-    """Carga los datos desde el archivo log"""
-    try:
-        df = pd.read_csv(file_path, 
-                        header=None, 
-                        names=['type', 'iterations', 'nodes', 'time'],
-                        encoding='utf-8')
-        return df
-    except FileNotFoundError:
-        print(f"\nError: No se encontró el archivo {file_path}")
-        print("Asegúrate de que el archivo existe y tiene el formato correcto:")
-        print("Formato esperado: InsultClient,25,1,1.4938 (por línea)")
-        sys.exit(1)
-
-def create_plots(df):
-    """Crea los gráficos de análisis"""
-    fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(18, 7))
-    
-    # Gráfico 1: Tiempo vs Iteraciones
-    for client_type, color in colors.items():
-        subset = df[df['type'] == client_type]
-        for nodes in sorted(subset['nodes'].unique()):
-            node_data = subset[subset['nodes'] == nodes]
-            ax1.plot(node_data['iterations'], node_data['time'], 
-                    marker='o', linestyle='--',
-                    label=f'{client_type} - {nodes} nodos',
-                    color=color, alpha=0.7)
-    
-    ax1.set_xscale('log')
-    ax1.set_yscale('log')
-    ax1.set_xlabel('Número de Iteraciones (log)')
-    ax1.set_ylabel('Tiempo de Ejecución (seg, log)')
-    ax1.set_title('Tiempo de Ejecución vs Carga de Trabajo')
-    ax1.legend(bbox_to_anchor=(1.05, 1))
-    ax1.grid(True, which="both", ls="--")
-    
-    # Gráfico 2: Speedup
-    for iterations in sorted(df['iterations'].unique()):
-        for client_type, color in colors.items():
-            subset = df[(df['type'] == client_type) & 
-                       (df['iterations'] == iterations)]
-            if not subset.empty:
-                baseline = subset[subset['nodes'] == 1]['time'].values[0]
-                speedup = baseline / subset['time']
-                ax2.plot(subset['nodes'], speedup,
-                        marker='s', linestyle='-',
-                        label=f'{client_type} - {iterations} iter',
-                        color=color, alpha=0.7)
-    
-    ax2.set_xlabel('Número de Nodos Workers')
-    ax2.set_ylabel('Speedup (Tiempo_1nodo / Tiempo_Nnodos)')
-    ax2.set_title('Ganancia de Paralelización')
-    ax2.legend(bbox_to_anchor=(1.05, 1))
-    ax2.grid(True)
-    
+# === Gráficos Tiempo vs Nodos ===
+for client in df["Client"].unique():
+    plt.figure()
+    for iteracion in sorted(df["Iteraciones"].unique()):
+        subset = df[(df["Client"] == client) & (df["Iteraciones"] == iteracion)]
+        plt.plot(subset["Nodos"], subset["Tiempo"], marker='o', label=f"{iteracion} iter")
+    plt.title(f"Tiempo vs Nodos - {client}")
+    plt.xlabel("Nodos")
+    plt.ylabel("Tiempo (s)")
+    plt.legend(title="Iteraciones")
+    plt.grid(True)
     plt.tight_layout()
-    plt.savefig('performance_analysis.png', dpi=300, bbox_inches='tight')
-    print("\nGráficos generados correctamente en 'performance_analysis.png'")
+    plt.savefig(f"XMLRPC/tiempo_vs_nodos_{client}.png")  # Guarda cada gráfico en un archivo
 
-if __name__ == "__main__":
-    # Cambiar por 'tiempos_clientes.log' si es diferente
-    log_file = 'tiempos_clientes.log'  
-    
-    print(f"Cargando datos desde {log_file}...")
-    data = load_data(log_file)
-    
-    print("\nResumen de datos cargados:")
-    print(data.groupby(['type', 'iterations', 'nodes']).describe())
-    
-    print("\nGenerando gráficos...")
-    create_plots(data)
+# === Gráficos Speedup vs Nodos ===
+for client in df["Client"].unique():
+    plt.figure()
+    for iteracion in sorted(df["Iteraciones"].unique()):
+        subset = df[(df["Client"] == client) & (df["Iteraciones"] == iteracion)].copy()
+        tiempo_nodo_1 = subset[subset["Nodos"] == 1]["Tiempo"].values[0]
+        subset["Speedup"] = tiempo_nodo_1 / subset["Tiempo"]
+        plt.plot(subset["Nodos"], subset["Speedup"], marker='o', label=f"{iteracion} iter")
+    plt.title(f"Speedup vs Nodos - {client}")
+    plt.xlabel("Nodos")
+    plt.ylabel("Speedup (T1 / Tn)")
+    plt.legend(title="Iteraciones")
+    plt.grid(True)
+    plt.tight_layout()
+    plt.savefig(f"XMLRPC/speedup_vs_nodos_{client}.png")  # Guarda cada gráfico en un archivo
+
+print("Graficos generados y guardados como PNG.")
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+# Leer el archivo de log
+df = pd.read_csv("Redis/tiempos_clientes.log", header=None, names=["Client", "Iteraciones", "Nodos", "Tiempo"])
+
+# Configurar estilo de gráficos
+sns.set(style="whitegrid")
+
+# === Gráficos Tiempo vs Nodos ===
+for client in df["Client"].unique():
+    plt.figure()
+    for iteracion in sorted(df["Iteraciones"].unique()):
+        subset = df[(df["Client"] == client) & (df["Iteraciones"] == iteracion)]
+        plt.plot(subset["Nodos"], subset["Tiempo"], marker='o', label=f"{iteracion} iter")
+    plt.title(f"Tiempo vs Nodos - {client}")
+    plt.xlabel("Nodos")
+    plt.ylabel("Tiempo (s)")
+    plt.legend(title="Iteraciones")
+    plt.grid(True)
+    plt.tight_layout()
+    plt.savefig(f"Redis/tiempo_vs_nodos_{client}.png")  # Guarda cada gráfico en un archivo
+
+# === Gráficos Speedup vs Nodos ===
+for client in df["Client"].unique():
+    plt.figure()
+    for iteracion in sorted(df["Iteraciones"].unique()):
+        subset = df[(df["Client"] == client) & (df["Iteraciones"] == iteracion)].copy()
+        tiempo_nodo_1 = subset[subset["Nodos"] == 1]["Tiempo"].values[0]
+        subset["Speedup"] = tiempo_nodo_1 / subset["Tiempo"]
+        plt.plot(subset["Nodos"], subset["Speedup"], marker='o', label=f"{iteracion} iter")
+    plt.title(f"Speedup vs Nodos - {client}")
+    plt.xlabel("Nodos")
+    plt.ylabel("Speedup (T1 / Tn)")
+    plt.legend(title="Iteraciones")
+    plt.grid(True)
+    plt.tight_layout()
+    plt.savefig(f"Redis/speedup_vs_nodos_{client}.png")  # Guarda cada gráfico en un archivo
+
+print("Graficos generados y guardados como PNG.")

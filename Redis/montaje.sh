@@ -1,36 +1,49 @@
 #!/bin/bash
 
-
 if [ "$#" -ne 2 ]; then
     echo "Uso: $0 <num_workers> <num_requests>"
     exit 1
 fi
 
-# Configuración
+NUM_WORKERS=$1
+NUM_REQUESTS=$2
 REDIS_CONTAINER="my-redis"
-NUM_REQUESTS=$1
-NUM_THREADS=$2
 
-# Iniciar Redis en Docker
+# Iniciar Redis
+echo "Iniciando Redis..."
 docker start $REDIS_CONTAINER
-sleep 1  # Esperar inicialización
+sleep 2
 
-# Iniciar servidor en segundo plano
-# python servidor.py &
-sleep 5
+# Iniciar workers en segundo plano
+echo "Lanzando $NUM_WORKERS workers..."
+PIDS=()
+for ((i=0; i<NUM_WORKERS; i++)); do
+    python worker.py &
+    PIDS+=($!)
+done
 
-# Ejecutar clientes
-echo -e "\n=== Ejecutando pruebas ==="
-python insult_client.py $NUM_REQUESTS $NUM_THREADS
-python filter_client.py $NUM_REQUESTS $NUM_THREADS
+# Esperar un poco a que se estabilicen los workers
+sleep 2
+
+# Ejecutar los clientes
+echo "Ejecutando clientes..."
+python insult_client.py $NUM_REQUESTS $NUM_WORKERS
+python filter_client.py $NUM_REQUESTS $NUM_WORKERS
 
 # Mostrar resultados
-echo -e "\n=== Resultados ==="
+echo -e "\nResultados:"
 cat tiempos_clientes.log
 
-python get_insults.py
+# Esperar a que terminen las tareas (opcional: sleep más largo según volumen)
+sleep 2
 
-# Limpieza
+# Detener workers
+echo "Deteniendo workers..."
+for pid in "${PIDS[@]}"; do
+    kill $pid 2>/dev/null
+done
+
+# Detener Redis
 docker stop $REDIS_CONTAINER > /dev/null
 
 echo -e "\nSistema detenido correctamente"
