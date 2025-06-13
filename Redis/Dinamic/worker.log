@@ -1,5 +1,301 @@
 
-./montaje.sh 100000 4
+./montaje.sh 1 25
+
+./montaje.sh 4 25
+
+./montaje.sh 7 25
+
+./montaje.sh 10 25
+
+./montaje.sh 1 200
+
+./montaje.sh 4 200
+
+./montaje.sh 7 200
+
+./montaje.sh 10 200
+
+./montaje.sh 1 700
+
+./montaje.sh 4 700
+
+./montaje.sh 7 700
+
+./montaje.sh 10 700
+
+./montaje.sh 1 1500
+
+./montaje.sh 4 1500
+
+./montaje.sh 7 1500
+
+./montaje.sh 10 1500
+
+./montaje.sh 1 3000
+Escalando a 2 workers
+Reduciendo a 1 workers
+Escalando a 2 workers
+Reduciendo a 1 workers
+
+./montaje.sh 4 3000
+Escalando a 2 workers
+Reduciendo a 1 workers
+Escalando a 2 workers
+Reduciendo a 1 workers
+
+./montaje.sh 7 3000
+Escalando a 2 workers
+Reduciendo a 1 workers
+Escalando a 2 workers
+Reduciendo a 1 workers
+
+./montaje.sh 10 3000
+Escalando a 2 workers
+Reduciendo a 1 workers
+Escalando a 2 workers
+Reduciendo a 1 workers
+
+./montaje.sh 1 7000
+Escalando a 2 workers
+Escalando a 3 workers
+Reduciendo a 2 workers
+Reduciendo a 1 workers
+Escalando a 2 workers
+Escalando a 3 workers
+Reduciendo a 2 workers
+Reduciendo a 1 workers
+
+./montaje.sh 4 7000
+Escalando a 2 workers
+Escalando a 3 workers
+Reduciendo a 2 workers
+Reduciendo a 1 workers
+Escalando a 3 workers
+Escalando a 4 workers
+Reduciendo a 3 workers
+Reduciendo a 2 workers
+Reduciendo a 1 workers
+
+./montaje.sh 7 7000
+Escalando a 2 workers
+Escalando a 3 workers
+Reduciendo a 2 workers
+Reduciendo a 1 workers
+Escalando a 2 workers
+Escalando a 3 workers
+Escalando a 4 workers
+Reduciendo a 3 workers
+Reduciendo a 2 workers
+Reduciendo a 1 workers
+
+./montaje.sh 10 7000
+Escalando a 2 workers
+Escalando a 3 workers
+Reduciendo a 2 workers
+Reduciendo a 1 workers
+Escalando a 2 workers
+Escalando a 4 workers
+Reduciendo a 3 workers
+Reduciendo a 2 workers
+Reduciendo a 1 workers
+
+./montaje.sh 1 12000
+Escalando a 2 workers
+Escalando a 3 workers
+Escalando a 4 workers
+Escalando a 5 workers
+Reduciendo a 4 workers
+Reduciendo a 3 workers
+Reduciendo a 2 workers
+Reduciendo a 1 workers
+Escalando a 2 workers
+Escalando a 3 workers
+Escalando a 4 workers
+Escalando a 5 workers
+Reduciendo a 4 workers
+Reduciendo a 3 workers
+Reduciendo a 2 workers
+Reduciendo a 1 workers
+
+./montaje.sh 4 12000
+Escalando a 2 workers
+Escalando a 3 workers
+Escalando a 4 workers
+Escalando a 5 workers
+Reduciendo a 4 workers
+Reduciendo a 3 workers
+Reduciendo a 2 workers
+Reduciendo a 1 workers
+Escalando a 2 workers
+Escalando a 3 workers
+Escalando a 4 workers
+Escalando a 5 workers
+Escalando a 6 workers
+Reduciendo a 5 workers
+Reduciendo a 4 workers
+Reduciendo a 3 workers
+Reduciendo a 2 workers
+Reduciendo a 1 workers
+
+./montaje.sh 7 12000
+Escalando a 2 workers
+Escalando a 3 workers
+Escalando a 4 workers
+Escalando a 5 workers
+Reduciendo a 4 workers
+Reduciendo a 3 workers
+Reduciendo a 2 workers
+Reduciendo a 1 workers
+Escalando a 2 workers
+Escalando a 3 workers
+Escalando a 5 workers
+Escalando a 6 workers
+Reduciendo a 5 workers
+Reduciendo a 4 workers
+Reduciendo a 3 workers
+Reduciendo a 2 workers
+Reduciendo a 1 workers
+
+./montaje.sh 10 12000
+Escalando a 2 workers
+Escalando a 3 workers
+Escalando a 4 workers
+Escalando a 5 workers
+Reduciendo a 4 workers
+Reduciendo a 3 workers
+Reduciendo a 2 workers
+Reduciendo a 1 workers
+Escalando a 2 workers
+Escalando a 4 workers
+Escalando a 6 workers
+Reduciendo a 5 workers
+Reduciendo a 4 workers
+Reduciendo a 3 workers
+Reduciendo a 2 workers
+Reduciendo a 1 workers
+
+./montaje.sh 1 20000
+Escalando a 2 workers
+Escalando a 3 workers
+Escalando a 4 workers
+Escalando a 5 workers
+Escalando a 6 workers
+Escalando a 7 workers
+Escalando a 8 workers
+Reduciendo a 7 workers
+Reduciendo a 6 workers
+Reduciendo a 5 workers
+Reduciendo a 4 workers
+Reduciendo a 3 workers
+Reduciendo a 2 workers
+Reduciendo a 1 workers
+Escalando a 2 workers
+Escalando a 3 workers
+Escalando a 4 workers
+Escalando a 5 workers
+Escalando a 6 workers
+Escalando a 7 workers
+Escalando a 8 workers
+Reduciendo a 7 workers
+Reduciendo a 6 workers
+Reduciendo a 5 workers
+Reduciendo a 4 workers
+Reduciendo a 3 workers
+Reduciendo a 2 workers
+Reduciendo a 1 workers
+
+./montaje.sh 4 20000
+Escalando a 2 workers
+Escalando a 3 workers
+Escalando a 4 workers
+Escalando a 5 workers
+Escalando a 6 workers
+Escalando a 7 workers
+Escalando a 8 workers
+Reduciendo a 7 workers
+Reduciendo a 6 workers
+Reduciendo a 5 workers
+Reduciendo a 4 workers
+Reduciendo a 3 workers
+Reduciendo a 2 workers
+Reduciendo a 1 workers
+Escalando a 2 workers
+Escalando a 3 workers
+Escalando a 4 workers
+Escalando a 5 workers
+Escalando a 6 workers
+Escalando a 7 workers
+Escalando a 9 workers
+Reduciendo a 8 workers
+Reduciendo a 7 workers
+Reduciendo a 6 workers
+Reduciendo a 5 workers
+Reduciendo a 4 workers
+Reduciendo a 3 workers
+Reduciendo a 2 workers
+Reduciendo a 1 workers
+
+./montaje.sh 7 20000
+Escalando a 2 workers
+Escalando a 3 workers
+Escalando a 4 workers
+Escalando a 5 workers
+Escalando a 6 workers
+Escalando a 7 workers
+Escalando a 8 workers
+Reduciendo a 7 workers
+Reduciendo a 6 workers
+Reduciendo a 5 workers
+Reduciendo a 4 workers
+Reduciendo a 3 workers
+Reduciendo a 2 workers
+Reduciendo a 1 workers
+Escalando a 2 workers
+Escalando a 3 workers
+Escalando a 5 workers
+Escalando a 6 workers
+Escalando a 8 workers
+Escalando a 9 workers
+Reduciendo a 8 workers
+Reduciendo a 7 workers
+Reduciendo a 6 workers
+Reduciendo a 5 workers
+Reduciendo a 4 workers
+Reduciendo a 3 workers
+Reduciendo a 2 workers
+Reduciendo a 1 workers
+
+./montaje.sh 10 20000
+Escalando a 2 workers
+Escalando a 3 workers
+Escalando a 4 workers
+Escalando a 5 workers
+Escalando a 6 workers
+Escalando a 7 workers
+Escalando a 8 workers
+Reduciendo a 7 workers
+Reduciendo a 6 workers
+Reduciendo a 5 workers
+Reduciendo a 4 workers
+Reduciendo a 3 workers
+Reduciendo a 2 workers
+Reduciendo a 1 workers
+Escalando a 3 workers
+Escalando a 5 workers
+Escalando a 6 workers
+Escalando a 8 workers
+Escalando a 10 workers
+Reduciendo a 9 workers
+Reduciendo a 8 workers
+Reduciendo a 7 workers
+Reduciendo a 6 workers
+Reduciendo a 5 workers
+Reduciendo a 4 workers
+Reduciendo a 3 workers
+Reduciendo a 2 workers
+Reduciendo a 1 workers
+
+./montaje.sh 1 50000
 Escalando a 2 workers
 Escalando a 3 workers
 Escalando a 4 workers
@@ -9,36 +305,25 @@ Escalando a 7 workers
 Escalando a 8 workers
 Escalando a 9 workers
 Escalando a 10 workers
-
-Deteniendo todos los workers...
-
-./montaje.sh 10 4
-Escalando a 2 workers
-Escalando a 3 workers
-Escalando a 4 workers
-
-./montaje.sh 3000 2
-Escalando a 2 workers
-Escalando a 3 workers
-Escalando a 4 workers
-Escalando a 5 workers
-Escalando a 6 workers
-
-./montaje.sh 300 2
-
-./montaje.sh 300 2
-
-./montaje.sh 300 2
-
-./montaje.sh 300 2
-
-./montaje.sh 300 2
-
-./montaje.sh 300 2
-
-./montaje.sh 300 2
-
-./montaje.sh 3000 2
+Escalando a 11 workers
+Escalando a 12 workers
+Escalando a 13 workers
+Escalando a 14 workers
+Escalando a 15 workers
+Reduciendo a 14 workers
+Reduciendo a 13 workers
+Reduciendo a 12 workers
+Reduciendo a 11 workers
+Reduciendo a 10 workers
+Reduciendo a 9 workers
+Reduciendo a 8 workers
+Reduciendo a 7 workers
+Reduciendo a 6 workers
+Reduciendo a 5 workers
+Reduciendo a 4 workers
+Reduciendo a 3 workers
+Reduciendo a 2 workers
+Reduciendo a 1 workers
 Escalando a 2 workers
 Escalando a 3 workers
 Escalando a 4 workers
@@ -47,5 +332,403 @@ Escalando a 6 workers
 Escalando a 7 workers
 Escalando a 8 workers
 Escalando a 9 workers
+Escalando a 10 workers
+Escalando a 11 workers
+Escalando a 12 workers
+Escalando a 13 workers
+Escalando a 14 workers
+Escalando a 15 workers
+Reduciendo a 14 workers
+Reduciendo a 13 workers
+Reduciendo a 12 workers
+Reduciendo a 11 workers
+Reduciendo a 10 workers
+Reduciendo a 9 workers
+Reduciendo a 8 workers
+Reduciendo a 7 workers
+Reduciendo a 6 workers
+Reduciendo a 5 workers
+Reduciendo a 4 workers
+Reduciendo a 3 workers
+Reduciendo a 2 workers
+Reduciendo a 1 workers
 
-./montaje.sh 300 2
+./montaje.sh 4 50000
+Escalando a 2 workers
+Escalando a 3 workers
+Escalando a 4 workers
+Escalando a 5 workers
+Escalando a 6 workers
+Escalando a 7 workers
+Escalando a 8 workers
+Escalando a 9 workers
+Escalando a 10 workers
+Escalando a 11 workers
+Escalando a 12 workers
+Escalando a 13 workers
+Escalando a 14 workers
+Escalando a 15 workers
+Reduciendo a 14 workers
+Reduciendo a 13 workers
+Reduciendo a 12 workers
+Reduciendo a 11 workers
+Reduciendo a 10 workers
+Reduciendo a 9 workers
+Reduciendo a 8 workers
+Reduciendo a 7 workers
+Reduciendo a 6 workers
+Reduciendo a 5 workers
+Reduciendo a 4 workers
+Reduciendo a 3 workers
+Reduciendo a 2 workers
+Reduciendo a 1 workers
+Escalando a 2 workers
+Escalando a 3 workers
+Escalando a 4 workers
+Escalando a 5 workers
+Escalando a 6 workers
+Escalando a 7 workers
+Escalando a 8 workers
+Escalando a 9 workers
+Escalando a 10 workers
+Escalando a 11 workers
+Escalando a 13 workers
+Escalando a 14 workers
+Escalando a 15 workers
+Reduciendo a 14 workers
+Reduciendo a 13 workers
+Reduciendo a 12 workers
+Reduciendo a 11 workers
+Reduciendo a 10 workers
+Reduciendo a 9 workers
+Reduciendo a 8 workers
+Reduciendo a 7 workers
+Reduciendo a 6 workers
+Reduciendo a 5 workers
+Reduciendo a 4 workers
+Reduciendo a 3 workers
+Reduciendo a 2 workers
+Reduciendo a 1 workers
+
+./montaje.sh 7 50000
+Escalando a 2 workers
+Escalando a 3 workers
+Escalando a 4 workers
+Escalando a 5 workers
+Escalando a 6 workers
+Escalando a 7 workers
+Escalando a 8 workers
+Escalando a 9 workers
+Escalando a 10 workers
+Escalando a 11 workers
+Escalando a 12 workers
+Escalando a 13 workers
+Escalando a 14 workers
+Escalando a 15 workers
+Reduciendo a 14 workers
+Reduciendo a 13 workers
+Reduciendo a 12 workers
+Reduciendo a 11 workers
+Reduciendo a 10 workers
+Reduciendo a 9 workers
+Reduciendo a 8 workers
+Reduciendo a 7 workers
+Reduciendo a 6 workers
+Reduciendo a 5 workers
+Reduciendo a 4 workers
+Reduciendo a 3 workers
+Reduciendo a 2 workers
+Reduciendo a 1 workers
+Escalando a 2 workers
+Escalando a 3 workers
+Escalando a 5 workers
+Escalando a 7 workers
+Escalando a 8 workers
+Escalando a 10 workers
+Escalando a 12 workers
+Escalando a 14 workers
+Escalando a 15 workers
+Reduciendo a 14 workers
+Reduciendo a 13 workers
+Reduciendo a 12 workers
+Reduciendo a 11 workers
+Reduciendo a 10 workers
+Reduciendo a 9 workers
+Reduciendo a 8 workers
+Reduciendo a 7 workers
+Reduciendo a 6 workers
+Reduciendo a 5 workers
+Reduciendo a 4 workers
+Reduciendo a 3 workers
+Reduciendo a 2 workers
+Reduciendo a 1 workers
+
+./montaje.sh 10 50000
+Escalando a 2 workers
+Escalando a 3 workers
+Escalando a 4 workers
+Escalando a 5 workers
+Escalando a 6 workers
+Escalando a 7 workers
+Escalando a 8 workers
+Escalando a 9 workers
+Escalando a 10 workers
+Escalando a 11 workers
+Escalando a 12 workers
+Escalando a 13 workers
+Escalando a 14 workers
+Escalando a 15 workers
+Reduciendo a 14 workers
+Reduciendo a 13 workers
+Reduciendo a 12 workers
+Reduciendo a 11 workers
+Reduciendo a 10 workers
+Reduciendo a 9 workers
+Reduciendo a 8 workers
+Reduciendo a 7 workers
+Reduciendo a 6 workers
+Reduciendo a 5 workers
+Reduciendo a 4 workers
+Reduciendo a 3 workers
+Reduciendo a 2 workers
+Reduciendo a 1 workers
+Escalando a 3 workers
+Escalando a 5 workers
+Escalando a 7 workers
+Escalando a 9 workers
+Escalando a 10 workers
+Escalando a 12 workers
+Escalando a 15 workers
+Reduciendo a 14 workers
+Reduciendo a 13 workers
+Reduciendo a 12 workers
+Reduciendo a 11 workers
+Reduciendo a 10 workers
+Reduciendo a 9 workers
+Reduciendo a 8 workers
+Reduciendo a 7 workers
+Reduciendo a 6 workers
+Reduciendo a 5 workers
+Reduciendo a 4 workers
+Reduciendo a 3 workers
+Reduciendo a 2 workers
+Reduciendo a 1 workers
+
+./montaje.sh 1 100000
+Escalando a 2 workers
+Escalando a 3 workers
+Escalando a 4 workers
+Escalando a 5 workers
+Escalando a 6 workers
+Escalando a 7 workers
+Escalando a 8 workers
+Escalando a 9 workers
+Escalando a 10 workers
+Escalando a 11 workers
+Escalando a 12 workers
+Escalando a 13 workers
+Escalando a 14 workers
+Escalando a 15 workers
+Reduciendo a 14 workers
+Reduciendo a 13 workers
+Reduciendo a 12 workers
+Reduciendo a 11 workers
+Reduciendo a 10 workers
+Reduciendo a 9 workers
+Reduciendo a 8 workers
+Reduciendo a 7 workers
+Reduciendo a 6 workers
+Reduciendo a 5 workers
+Reduciendo a 4 workers
+Reduciendo a 3 workers
+Reduciendo a 2 workers
+Reduciendo a 1 workers
+Escalando a 2 workers
+Escalando a 3 workers
+Escalando a 4 workers
+Escalando a 5 workers
+Escalando a 6 workers
+Escalando a 7 workers
+Escalando a 8 workers
+Escalando a 9 workers
+Escalando a 10 workers
+Escalando a 11 workers
+Escalando a 12 workers
+Escalando a 13 workers
+Escalando a 14 workers
+Escalando a 15 workers
+Reduciendo a 14 workers
+Reduciendo a 13 workers
+Reduciendo a 12 workers
+Reduciendo a 11 workers
+Reduciendo a 10 workers
+Reduciendo a 9 workers
+Reduciendo a 8 workers
+Reduciendo a 7 workers
+Reduciendo a 6 workers
+Reduciendo a 5 workers
+Reduciendo a 4 workers
+Reduciendo a 3 workers
+Reduciendo a 2 workers
+Reduciendo a 1 workers
+
+./montaje.sh 4 100000
+Escalando a 2 workers
+Escalando a 3 workers
+Escalando a 4 workers
+Escalando a 5 workers
+Escalando a 6 workers
+Escalando a 7 workers
+Escalando a 8 workers
+Escalando a 9 workers
+Escalando a 10 workers
+Escalando a 11 workers
+Escalando a 12 workers
+Escalando a 13 workers
+Escalando a 14 workers
+Escalando a 15 workers
+Reduciendo a 14 workers
+Reduciendo a 13 workers
+Reduciendo a 12 workers
+Reduciendo a 11 workers
+Reduciendo a 10 workers
+Reduciendo a 9 workers
+Reduciendo a 8 workers
+Reduciendo a 7 workers
+Reduciendo a 6 workers
+Reduciendo a 5 workers
+Reduciendo a 4 workers
+Reduciendo a 3 workers
+Reduciendo a 2 workers
+Reduciendo a 1 workers
+Escalando a 2 workers
+Escalando a 3 workers
+Escalando a 4 workers
+Escalando a 5 workers
+Escalando a 6 workers
+Escalando a 7 workers
+Escalando a 8 workers
+Escalando a 9 workers
+Escalando a 11 workers
+Escalando a 12 workers
+Escalando a 13 workers
+Escalando a 14 workers
+Escalando a 15 workers
+Reduciendo a 14 workers
+Reduciendo a 13 workers
+Reduciendo a 12 workers
+Reduciendo a 11 workers
+Reduciendo a 10 workers
+Reduciendo a 9 workers
+Reduciendo a 8 workers
+Reduciendo a 7 workers
+Reduciendo a 6 workers
+Reduciendo a 5 workers
+Reduciendo a 4 workers
+Reduciendo a 3 workers
+Reduciendo a 2 workers
+Reduciendo a 1 workers
+
+./montaje.sh 7 100000
+Escalando a 2 workers
+Escalando a 3 workers
+Escalando a 4 workers
+Escalando a 5 workers
+Escalando a 6 workers
+Escalando a 7 workers
+Escalando a 8 workers
+Escalando a 9 workers
+Escalando a 10 workers
+Escalando a 11 workers
+Escalando a 12 workers
+Escalando a 13 workers
+Escalando a 14 workers
+Escalando a 15 workers
+Reduciendo a 14 workers
+Reduciendo a 13 workers
+Reduciendo a 12 workers
+Reduciendo a 11 workers
+Reduciendo a 10 workers
+Reduciendo a 9 workers
+Reduciendo a 8 workers
+Reduciendo a 7 workers
+Reduciendo a 6 workers
+Reduciendo a 5 workers
+Reduciendo a 4 workers
+Reduciendo a 3 workers
+Reduciendo a 2 workers
+Reduciendo a 1 workers
+Escalando a 3 workers
+Escalando a 4 workers
+Escalando a 6 workers
+Escalando a 8 workers
+Escalando a 10 workers
+Escalando a 11 workers
+Escalando a 13 workers
+Escalando a 15 workers
+Reduciendo a 14 workers
+Reduciendo a 13 workers
+Reduciendo a 12 workers
+Reduciendo a 11 workers
+Reduciendo a 10 workers
+Reduciendo a 9 workers
+Reduciendo a 8 workers
+Reduciendo a 7 workers
+Reduciendo a 6 workers
+Reduciendo a 5 workers
+Reduciendo a 4 workers
+Reduciendo a 3 workers
+Reduciendo a 2 workers
+Reduciendo a 1 workers
+
+./montaje.sh 10 100000
+Escalando a 2 workers
+Escalando a 3 workers
+Escalando a 4 workers
+Escalando a 5 workers
+Escalando a 6 workers
+Escalando a 7 workers
+Escalando a 8 workers
+Escalando a 9 workers
+Escalando a 10 workers
+Escalando a 11 workers
+Escalando a 12 workers
+Escalando a 13 workers
+Escalando a 14 workers
+Escalando a 15 workers
+Reduciendo a 14 workers
+Reduciendo a 13 workers
+Reduciendo a 12 workers
+Reduciendo a 11 workers
+Reduciendo a 10 workers
+Reduciendo a 9 workers
+Reduciendo a 8 workers
+Reduciendo a 7 workers
+Reduciendo a 6 workers
+Reduciendo a 5 workers
+Reduciendo a 4 workers
+Reduciendo a 3 workers
+Reduciendo a 2 workers
+Reduciendo a 1 workers
+Escalando a 2 workers
+Escalando a 4 workers
+Escalando a 5 workers
+Escalando a 7 workers
+Escalando a 9 workers
+Escalando a 11 workers
+Escalando a 13 workers
+Escalando a 15 workers
+Reduciendo a 14 workers
+Reduciendo a 13 workers
+Reduciendo a 12 workers
+Reduciendo a 11 workers
+Reduciendo a 10 workers
+Reduciendo a 9 workers
+Reduciendo a 8 workers
+Reduciendo a 7 workers
+Reduciendo a 6 workers
+Reduciendo a 5 workers
+Reduciendo a 4 workers
+Reduciendo a 3 workers
+Reduciendo a 2 workers
+Reduciendo a 1 workers

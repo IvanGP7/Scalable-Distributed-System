@@ -1,12 +1,9 @@
 import redis
-import threading
 import time
 import sys
 
-def submit_insults(num_requests, redis_conn):
-    for i in range(num_requests):
-        insult = f"insult_{i}"
-        redis_conn.lpush('task_queue', insult)
+# Texto de prueba para censurar
+TEST_TEXT = "Eres un idiota y un tonto del culo."
 
 def main():
     if len(sys.argv) != 3:
@@ -15,34 +12,39 @@ def main():
 
     num_requests = int(sys.argv[1])
     num_threads = int(sys.argv[2])
+    client_name = "insult"
 
+    # Conexión con Redis
     r = redis.Redis(host='localhost', port=6379, db=0)
-    r.delete('task_queue')  # Limpiar cola previa si existe
 
-    print(f"\nEnviando {num_requests} insultos con {num_threads} threads")
+    # Reiniciar el contador en Redis
+    r.set(f"{client_name}_done", 0)
+
+    print(f"\nInsultClient: {num_requests} peticiones delegadas a insult_queue")
+    print(f"Texto de prueba: '{TEST_TEXT}'")
+
     start_time = time.time()
 
-    requests_per_thread = num_requests // num_threads
-    threads = []
+    # Enviar las tareas
+    for _ in range(num_requests):
+        r.rpush("insult_queue", TEST_TEXT)
 
-    for _ in range(num_threads):
-        t = threading.Thread(target=submit_insults, args=(requests_per_thread, r))
-        threads.append(t)
-        t.start()
+    # Calcular y guardar la tasa estimada de llegada
+    duration = time.time() - start_time
+    lambda_est = num_requests / duration if duration > 0 else 0
+    r.set("lambda_estimate", lambda_est)
 
-    for t in threads:
-        t.join()
-
-    # Esperar hasta que todos los insultos sean procesados por los workers
-    while r.llen('task_queue') > 0:
+    # Esperar hasta que todas las tareas sean procesadas
+    while int(r.get(f"{client_name}_done") or 0) < num_requests:
         time.sleep(0.1)
 
     total_time = time.time() - start_time
 
+    # Registrar en el log
     with open("tiempos_clientes.log", "a") as f:
-        f.write(f"InsultClient,{num_requests},{num_threads},{total_time:.4f}\n")
+        f.write(f"InsultClient,{num_threads},{num_requests},{total_time:.4f}\n")
 
-    print(f"Tiempo total: {total_time:.2f}s")
+    print(f"Finalizado en {total_time:.2f} segundos")
 
 if __name__ == "__main__":
     main()
