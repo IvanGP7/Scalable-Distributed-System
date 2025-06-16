@@ -70,8 +70,6 @@ def scaler(redis_conn, workers, stop_event, min_workers=1, max_workers=15, check
             print("[WARN] Redis desconectado. Escalador deteniéndose.")
             break
 
-        N_formula = math.ceil((B + lambda_est * T_r) / C)
-
         # Escalado con mayor resistencia a partir de B > 3000
         if B < 100:
             N = 1
